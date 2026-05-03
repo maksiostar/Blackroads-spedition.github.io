@@ -90,11 +90,17 @@
       padding: 20px;
       opacity: 0.7;
     }
-    .side-img {
-      position: absolute;
-      top: 20px;
-      left: 10px;
-    }
+   .dekor {
+  position: fixed;
+  top: 50%;
+  left: 0; /* albo right: 0; */
+  transform: translateY(-50%);
+  
+  width: 180px; /* dostosuj */
+  opacity: 0.7; /* lekko przezroczysty */
+  pointer-events: none; /* NIE da się kliknąć (bo to dekoracja) */
+  z-index: 0; /* żeby nie zasłaniał treści */
+   }
   </style>
 </head>
 <body>
@@ -144,7 +150,7 @@
     <h2>Jak dołączyć?</h2>
     <p>Dołącz przez Discord i złóż podanie!</p>
   </div>
-   <img src="https://cdn.discordapp.com/attachments/1499482487363993830/1500164851585257675/bacabaca_transport.png?ex=69f819a4&is=69f6c824&hm=405d98466dd635e4de114422b1118631300969b4439caf5102b90aaba573d843&" class="side-img">   
+   <img src="https://cdn.discordapp.com/attachments/1499482487363993830/1500164851585257675/bacabaca_transport.png?ex=69f819a4&is=69f6c824&hm=405d98466dd635e4de114422b1118631300969b4439caf5102b90aaba573d843&" class=".dekor">   
 
 </section>
 
